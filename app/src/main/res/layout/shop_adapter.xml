@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:layout_marginTop="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+        //商品的adapter布局
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/simple_shop"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/img_shop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_background"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/txt_shop_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:text="商品标题"
+            android:ellipsize="end"
+            android:lines="2"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/txt_shop_price"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:textColor="#fa0202"
+            android:textSize="30sp"
+            android:text="￥0.00"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_shop_ping"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:textColor="#b9b7b7"
+            android:textSize="30sp"
+            android:text="0%好评"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

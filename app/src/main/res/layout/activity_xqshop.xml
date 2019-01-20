@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.zhangzili20190120.xqshoppage.XQShopActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageView
+            android:id="@+id/img_touxiang"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/txt_shard"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:text="分享"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+
+    //轮播图
+
+    <com.stx.xhb.xbanner.XBanner
+        android:id="@+id/xbanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/rl_top"
+        android:visibility="gone"
+        >
+    </com.stx.xhb.xbanner.XBanner>
+
+    <ImageView
+        android:id="@+id/img_vp"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@+id/rl_top"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/img_vp"
+        >
+
+        <TextView
+            android:id="@+id/txt_xqshop_title"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="标题"
+            android:textColor="#000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txt_xqshop_content"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:textColor="#f00"
+            android:text="介绍"
+            />
+
+        <TextView
+            android:id="@+id/txt_xqshop_price"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:textColor="#f00"
+            android:text="￥0.00"
+            />
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/btn_gobycar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:text="加入购物车"
+            android:background="#f00"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

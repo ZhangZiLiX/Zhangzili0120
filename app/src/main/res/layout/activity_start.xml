@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.zhangzili20190120.shoppage.StartActivity"
+    android:orientation="vertical"
+    >
+
+    //定位按钮
+    <Button
+        android:id="@+id/btn_loding"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:text="定位用户的具体位置信息"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+    //排序的按钮
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+
+        <TextView
+            android:id="@+id/txt_zong"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="综合"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/txt_xiao"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="销量"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/txt_jia"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="价格"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/txt_shai"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="筛选"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+    //商品展示
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
